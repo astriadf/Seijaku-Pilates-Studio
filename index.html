@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seijaku Pilates Studio - Transform your body, strengthen your core, and find inner peace through Pilates.">
+    <meta name="keywords" content="pilates, studio, fitness, wellness, yoga, purbalingga">
+    <meta name="author" content="Seijaku Pilates">
+    
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Seijaku Pilates Studio">
+    <meta property="og:description" content="Premium Pilates Studio in Purbalingga">
+    <meta property="og:type" content="website">
+    
+    <title>Seijaku Pilates - Find Your Inner Peace</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="images/logo.png" alt="Seijaku Pilates Logo" class="navbar-logo-image">
+                <span>Seijaku Pilates Studio</span>
+            </a>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="navbar-actions">
+                <button class="btn btn-outline btn-sm" onclick="showLoginModal()">
+                    <i data-lucide="log-in"></i>
+                    Login
+                </button>
+                <button class="btn btn-primary btn-sm" onclick="showRegisterModal()">
+                    Get Started
+                </button>
+            </div>
+            
+            <button class="navbar-toggle" id="navbarToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Body,<br>
+                    <span class="accent">Find Your Peace</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Discover the power of Pilates at Seijaku Studio. Build strength, 
+                    improve flexibility, and achieve mindful wellness in our serene space.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg" onclick="showRegisterModal()">
+                        <i data-lucide="calendar"></i>
+                        Book Your First Class
+                    </button>
+                    <button class="btn btn-primary btn-lg" onclick="scrollToSection('about')">
+                        <i data-lucide="play-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <section class="section" style="background: var(--ghibli-cream-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Seijaku?</h2>
+                <p class="section-subtitle">
+                    Experience the difference with our innovative approach to Pilates
+                </p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧘‍♀️</div>
+                    <h3 class="feature-title">Expert Instructors</h3>
+                    <p class="feature-description">
+                        Learn from certified professionals with years of experience
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Smart Booking</h3>
+                    <p class="feature-description">
+                        Book classes instantly with our intelligent recommendation system
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎥</div>
+                    <h3 class="feature-title">Video Library</h3>
+                    <p class="feature-description">
+                        Access 100+ tutorial videos anytime, anywhere
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Progress Tracking</h3>
+                    <p class="feature-description">
+                        Monitor your journey with detailed analytics and insights
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Achievements</h3>
+                    <p class="feature-description">
+                        Stay motivated with gamified rewards and milestones
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title">Smart Reminders</h3>
+                    <p class="feature-description">
+                        Never miss a class with automated email and push notifications
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Seijaku Pilates</h2>
+                <p class="section-subtitle">
+                    静寂 (Seijaku) - Finding tranquility through movement
+                </p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: var(--text-lg); margin-bottom: var(--space-xl); line-height: 1.8;">
+                    Founded in Purbalingga, Seijaku Pilates Studio is more than just a fitness center. 
+                    We are a community dedicated to helping you discover strength, flexibility, and inner peace 
+                    through the transformative practice of Pilates.
+                </p>
+                
+                <div class="stats-grid" style="margin-top: var(--space-3xl);">
+                    <div class="stat-card">
+                        <div class="stat-card-header">
+                            <div class="stat-card-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card-value">500+</div>
+                        <div class="stat-card-label">Happy Members</div>
+                    </div>
+                    
+                    <div class="stat-card" style="background: linear-gradient(135deg, var(--ghibli-sky), #7DBFDE);">
+                        <div class="stat-card-header">
+                            <div class="stat-card-icon">
+                                <i data-lucide="calendar"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card-value">2000+</div>
+                        <div class="stat-card-label">Classes Completed</div>
+                    </div>
+                    
+                    <div class="stat-card" style="background: linear-gradient(135deg, var(--ghibli-lavender), #C4B5D8);">
+                        <div class="stat-card-header">
+                            <div class="stat-card-icon">
+                                <i data-lucide="award"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card-value">98%</div>
+                        <div class="stat-card-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLASS TYPES SECTION ========== -->
+    <section class="section" id="classes" style="background: var(--ghibli-cream-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Classes</h2>
+                <p class="section-subtitle">
+                    Choose from 7 different Pilates styles to match your goals
+                </p>
+            </div>
+            
+            <div class="class-grid" id="classGrid">
+                <!-- Classes will be loaded dynamically -->
+                <div class="card">
+                    <div class="loading-spinner" style="margin: var(--space-3xl) auto;"></div>
+                    <p class="text-center text-muted">Loading classes...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INSTRUCTORS SECTION ========== -->
+    <section class="section" id="instructors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Instructors</h2>
+                <p class="section-subtitle">
+                    Certified professionals dedicated to your wellness journey
+                </p>
+            </div>
+            
+            <div class="instructor-grid" id="instructorGrid">
+                <!-- Sample Instructor Card -->
+                <div class="instructor-card">
+                    <img src="assets/images/placeholder.jpg" alt="Instructor" class="instructor-avatar">
+                    <h3 class="instructor-name">Sarah Johnson</h3>
+                    <p class="instructor-role">Lead Instructor</p>
+                    <div class="instructor-rating">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <span>5.0</span>
+                    </div>
+                    <p class="instructor-bio">
+                        15+ years of experience in classical and clinical Pilates. 
+                        Specializes in rehabilitation and core strengthening.
+                    </p>
+                    <div class="instructor-social">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+                
+                <!-- More instructors will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="section" id="testimonials" style="background: var(--ghibli-light-sage);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Members Say</h2>
+                <p class="section-subtitle">
+                    Real stories from our Seijaku community
+                </p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                        <img src="assets/images/placeholder.jpg" alt="Member" class="avatar-lg">
+                        <div>
+                            <h4>Maria Santos</h4>
+                            <p class="text-muted" style="margin: 0;">Member since 2023</p>
+                            <div style="color: #FFD700; display: flex; gap: 2px; margin-top: 4px;">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary">
+                        "Seijaku transformed my life! The instructors are amazing, 
+                        and the smart booking system makes it so easy to fit classes into my schedule."
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                        <img src="assets/images/placeholder.jpg" alt="Member" class="avatar-lg">
+                        <div>
+                            <h4>John Doe</h4>
+                            <p class="text-muted" style="margin: 0;">Member since 2022</p>
+                            <div style="color: #FFD700; display: flex; gap: 2px; margin-top: 4px;">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary">
+                        "Best investment in my health! The progress tracking feature keeps me motivated, 
+                        and earning achievements makes every class exciting."
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                        <img src="assets/images/placeholder.jpg" alt="Member" class="avatar-lg">
+                        <div>
+                            <h4>Lisa Chen</h4>
+                            <p class="text-muted" style="margin: 0;">Member since 2024</p>
+                            <div style="color: #FFD700; display: flex; gap: 2px; margin-top: 4px;">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-secondary">
+                        "The video library is incredible! I can practice at home and still feel connected 
+                        to the studio. The quality is outstanding."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section" id="contact" style="background: var(--ghibli-cream-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Have questions? We'd love to hear from you
+                </p>
+            </div>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="card">
+                    <div style="display: grid; gap: var(--space-lg);">
+                        <div style="display: flex; align-items: center; gap: var(--space-md);">
+                            <div style="width: 48px; height: 48px; background: var(--ghibli-light-sage); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i data-lucide="map-pin" style="color: var(--ghibli-sage);"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 4px;">Location</h4>
+                                <p class="text-muted" style="margin: 0;">Purbalingga, Jawa Tengah, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: var(--space-md);">
+                            <div style="width: 48px; height: 48px; background: var(--ghibli-light-sage); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i data-lucide="phone" style="color: var(--ghibli-sage);"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 4px;">Phone</h4>
+                                <p class="text-muted" style="margin: 0;">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: var(--space-md);">
+                            <div style="width: 48px; height: 48px; background: var(--ghibli-light-sage); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i data-lucide="mail" style="color: var(--ghibli-sage);"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 4px;">Email</h4>
+                                <p class="text-muted" style="margin: 0;">seijaku.pilates@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: var(--space-md);">
+                            <div style="width: 48px; height: 48px; background: var(--ghibli-light-sage); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i data-lucide="instagram" style="color: var(--ghibli-sage);"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 4px;">Instagram</h4>
+                                <p class="text-muted" style="margin: 0;">@seijaku.pilates</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: var(--space-md);">
+                            <div style="width: 48px; height: 48px; background: var(--ghibli-light-sage); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i data-lucide="clock" style="color: var(--ghibli-sage);"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 4px;">Opening Hours</h4>
+                                <p class="text-muted" style="margin: 0;">Fri-Sun: 08:00 - 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Seijaku</h4>
+                    <p style="color: var(--ghibli-gray); margin-bottom: var(--space-md);">
+                        Premium Pilates studio dedicated to transforming lives through mindful movement and wellness.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
+                        <a href="#"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>For Members</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#" onclick="showLoginModal()">Login</a></li>
+                        <li><a href="#" onclick="showRegisterModal()">Register</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--ghibli-gray); margin-bottom: var(--space-md);">
+                        Subscribe to get updates on new classes and special offers.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm);">
+                        <input type="email" placeholder="Your email" class="form-control" style="flex: 1;">
+                        <button class="btn btn-primary">
+                            <i data-lucide="send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seijaku Pilates Studio. All rights reserved. Made with ❤️ in Purbalingga</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== LOGIN MODAL ========== -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    <i data-lucide="log-in"></i>
+                    Welcome Back
+                </h3>
+                <button class="modal-close" onclick="closeModal('loginModal')">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">
+                            <i data-lucide="mail"></i>
+                            Email
+                        </label>
+                        <input type="email" id="loginEmail" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">
+                            <i data-lucide="lock"></i>
+                            Password
+                        </label>
+                        <input type="password" id="loginPassword" name="password" class="form-control" required>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg);">
+                        <label style="display: flex; align-items: center; gap: var(--space-sm); font-size: var(--text-sm);">
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+                        <a href="#" style="font-size: var(--text-sm);">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i data-lucide="log-in"></i>
+                        Login
+                    </button>
+                </form>
+                <div style="text-align: center; margin-top: var(--space-lg);">
+                    <p>Don't have an account? <a href="#" onclick="switchToRegister()">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== REGISTER MODAL ========== -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    <i data-lucide="user-plus"></i>
+                    Join Seijaku
+                </h3>
+                <button class="modal-close" onclick="closeModal('registerModal')">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerName">
+                                <i data-lucide="user"></i>
+                                Full Name
+                            </label>
+                            <input type="text" id="registerName" name="full_name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">
+                                <i data-lucide="mail"></i>
+                                Email
+                            </label>
+                            <input type="email" id="registerEmail" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registerPhone">
+                                <i data-lucide="phone"></i>
+                                Phone
+                            </label>
+                            <input type="tel" id="registerPhone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">
+                                <i data-lucide="lock"></i>
+                                Password
+                            </label>
+                            <input type="password" id="registerPassword" name="password" class="form-control" required>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-lg);">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" style="font-size: var(--text-sm); margin: 0;">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i data-lucide="user-plus"></i>
+                        Create Account
+                    </button>
+                </form>
+                <div style="text-align: center; margin-top: var(--space-lg);">
+                    <p>Already have an account? <a href="#" onclick="switchToLogin()">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Load dynamic content
+        document.addEventListener('DOMContentLoaded', function() {
+            loadClasses();
+            loadInstructors();
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Navbar toggle for mobile
+        document.getElementById('navbarToggle').addEventListener('click', function() {
+            document.getElementById('navbarMenu').classList.toggle('active');
+        });
+        
+                // Close mobile menu when clicking on a link
+        document.querySelectorAll('#navbarMenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navbarMenu').classList.remove('active');
+            });
+        });
+        
+        // Load classes dynamically
+        async function loadClasses() {
+            try {
+                const response = await fetch('php/api/classes.php');
+                const classes = await response.json();
+                
+                const classGrid = document.getElementById('classGrid');
+                classGrid.innerHTML = '';
+                
+                classes.forEach(classType => {
+                    const classCard = document.createElement('div');
+                    classCard.className = 'class-card';
+                    classCard.innerHTML = `
+                        <div class="class-card-header">
+                            ${classType.icon}
+                        </div>
+                        <div class="class-card-body">
+                            <h3 class="class-card-title">
+                                ${classType.name}
+                            </h3>
+                            <p class="class-card-description">
+                                ${classType.description}
+                            </p>
+                            <div class="class-card-meta">
+                                <span class="class-card-meta-item">
+                                    <i data-lucide="users"></i>
+                                    ${classType.difficulty_level}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="class-card-footer">
+                            <span class="class-card-price">From Rp 50K</span>
+                            <button class="btn btn-primary btn-sm" onclick="showBookingModal(${classType.class_type_id})">
+                                Book Now
+                            </button>
+                        </div>
+                    `;
+                    classGrid.appendChild(classCard);
+                });
+                
+                // Re-initialize icons
+                lucide.createIcons();
+            } catch (error) {
+                console.error('Error loading classes:', error);
+            }
+        }
+        
+        // Load instructors dynamically
+        async function loadInstructors() {
+            try {
+                const response = await fetch('php/api/instructors.php');
+                const instructors = await response.json();
+                
+                const instructorGrid = document.getElementById('instructorGrid');
+                // Keep the sample instructor and add more
+                const existingCards = instructorGrid.querySelectorAll('.instructor-card');
+                
+                instructors.forEach(instructor => {
+                    const instructorCard = document.createElement('div');
+                    instructorCard.className = 'instructor-card';
+                    instructorCard.innerHTML = `
+                        <img src="${instructor.profile_picture || 'assets/images/placeholder.jpg'}" alt="${instructor.full_name}" class="instructor-avatar">
+                        <h3 class="instructor-name">${instructor.full_name}</h3>
+                        <p class="instructor-role">${instructor.specialization || 'Instructor'}</p>
+                        <div class="instructor-rating">
+                            ${generateStars(instructor.rating)}
+                            <span>${instructor.rating}</span>
+                        </div>
+                        <p class="instructor-bio">${instructor.bio || 'Experienced Pilates instructor dedicated to your wellness journey.'}</p>
+                        <div class="instructor-social">
+                            ${instructor.instagram ? `<a href="https://instagram.com/${instructor.instagram}"><i data-lucide="instagram"></i></a>` : ''}
+                            <a href="mailto:${instructor.email}"><i data-lucide="mail"></i></a>
+                        </div>
+                    `;
+                    instructorGrid.appendChild(instructorCard);
+                });
+                
+                // Re-initialize icons
+                lucide.createIcons();
+            } catch (error) {
+                console.error('Error loading instructors:', error);
+            }
+        }
+        
+        // Generate star rating HTML
+        function generateStars(rating) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                stars += `<i data-lucide="star" ${i <= rating ? 'fill="currentColor"' : ''}></i>`;
+            }
+            return stars;
+        }
+        
+        // Modal functions
+        function showLoginModal() {
+            closeModal('registerModal');
+            document.getElementById('loginModal').classList.add('active');
+        }
+        
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+        
+        function switchToRegister() {
+            closeModal('loginModal');
+            showRegisterModal();
+        }
+        
+        function switchToLogin() {
+            closeModal('registerModal');
+            showLoginModal();
+        }
+        
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal')) {
+                e.target.classList.remove('active');
+            }
+        });
+        
+        // Handle form submissions
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            await handleLogin(this);
+        });
+        
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            await handleRegister(this);
+        });
+        
+        // Newsletter subscription
+        document.querySelector('.footer-section form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                showNotification('Thank you for subscribing!', 'success');
+                this.reset();
+            }
+        });
+        
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i data-lucide="${type === 'success' ? 'check-circle' : type === 'error' ? 'x-circle' : 'info'}"></i>
+                    <span>${message}</span>
+                </div>
+                <button onclick="this.parentElement.remove()">
+                    <i data-lucide="x"></i>
+                </button>
+            `;
+            document.body.appendChild(notification);
+            lucide.createIcons();
+            
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.remove();
+                }
+            }, 5000);
+        }
+        
+        // Placeholder for booking modal (will be implemented in booking.js)
+        function showBookingModal(classTypeId) {
+            showNotification('Booking system coming soon! Please register first.', 'info');
+        }
+    </script>
+</body>
+</html>
